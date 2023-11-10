@@ -1,25 +1,19 @@
-
+//Variable that is used for computer choice
 const gameOptions = ["rock", "paper", "scissors"];
+
 
 //Create function to get user input with prompt
 function playerSelection() {
     let userChoice = prompt("Type your choice: ");
     userChoice = userChoice.toLocaleLowerCase();
-    // if (gameOptions.includes(userChoice)){
-    //     console.log("Yea that's valid, let's play the game!");
-    //     return userChoice;
-    // }
-    // else {
-    //     console.log("Not a valid option, refresh the page and try again")
-    // }
+    if (gameOptions.includes(userChoice)){
+        return userChoice;
+    }
+    else {
+        console.log("Not a valid option, refresh the page and try again")
+    }
     return userChoice;
 }
-
-
-//create a function that play a round based on user and computer schoice
-// that function will show the winner like: "You Lose! Paper beats Rock"
-//create a function game() that will play a round 5 times and keep score 
-
 
 
 //Get computer choice that choice a random value between rock paper scissors
@@ -28,6 +22,8 @@ function getComputerChoice(options) {
     return options[randomIndex];
 }
 
+
+//Game logic of a round
 function playRound(playerSelection, computerSelection) {
     let playerPoint = "player";
     let computerPoint = "computer";
@@ -64,7 +60,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-
+//Logic of game with 5 round and keeping score and show it
 function game(){
     let playerScore = 0;
     let computerScore = 0;
@@ -79,8 +75,7 @@ function game(){
         if ( playPoint == "player"){
             playerScore++; 
         } else if (playPoint == "computer"){
-            computerScore++;
-            
+            computerScore++;            
         } else {
             continue;
         }
