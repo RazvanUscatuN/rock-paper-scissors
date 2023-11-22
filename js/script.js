@@ -16,9 +16,9 @@ function playerSelection() {
 }
 
 
-//Get computer choice that choice a random value between rock paper scissors
+//Get computer choice that choice a random value between rock paper scissors 
 function getComputerChoice(options) {
-    const randomIndex = Math.floor(Math.random() * options.length);
+    const randomIndex = Math.floor(Math.random() * options.length);     
     return options[randomIndex];
 }
 
