@@ -1,4 +1,4 @@
 # rock-paper-scissors
-This is my attempt at making a rock-paper-scissors game using javascript<br>
-Right now is working just in the console, indeed to do it better in the future
+This is a simple rock-paper-scissors game, where you are against computer with random choices<br>
+The first to win 5 points win the game.
 Live website from github: https://razvanuscatun.github.io/rock-paper-scissors/
