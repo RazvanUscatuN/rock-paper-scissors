@@ -116,11 +116,13 @@ function handleButtonClick(playerChoice) {
         alert("Player Win!")
         userScore = 0;
         computerScore = 0;
-        
+        window.location.reload();
+
     }else if(computerScore == 5){
         alert("Computer win!")
         userScore = 0;
         computerScore = 0;
+        window.location.reload();
     }
 }
 
